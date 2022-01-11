@@ -79,7 +79,7 @@ class ModelFactory {
 
             val mdl = Model(streetAbr, secondaryUnits, states, directions, miscellaneous, csl);
             File("./models").mkdir();
-            ObjectOutputStream(FileOutputStream("/resources/models/" + c + ".model")).use{ it -> it.writeObject(mdl)}
+            ObjectOutputStream(FileOutputStream("./models/" + c + ".model")).use{ it -> it.writeObject(mdl)}
         }
 
         /**
