@@ -64,7 +64,12 @@ import io.standardizer.address.AddressStandardizerFactory;
 import java.util.Map;  
   
 public class Main {  
- public static void main(String[] args) { AddressStandardizer adr = AddressStandardizerFactory.createStandardizer("us"); Map<String, String> res = adr.standardize("your address here"); System.out.println(res); }}  
+    public static void main(String[] args) { 
+        AddressStandardizer adr = AddressStandardizerFactory.createStandardizer("us"); 
+        Map<String, String> res = adr.standardize("your address here"); 
+        System.out.println(res); 
+    }
+}  
 ```  
 
 ## TODO
